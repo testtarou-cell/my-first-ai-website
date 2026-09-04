@@ -3,17 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChatGPTとGitHubを使って作った、最初のWebサイトです。">
   <title>My First AI Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="container">
-    <p class="eyebrow">MY FIRST WEBSITE</p>
-    <h1>こんにちは。</h1>
-    <p class="intro">ChatGPTとGitHubを使って作った、最初のWebサイトです。</p>
-    <section><h2>好きなこと</h2><ul><li>写真を撮ること</li><li>新しいものを作ること</li><li>家族と出かけること</li></ul></section>
-    <button id="moreButton">もっと見る</button>
-    <p id="message" hidden>少しずつ、自分らしいサイトに育てていきます。</p>
+    <header class="hero">
+      <p class="eyebrow">MY FIRST WEBSITE</p>
+      <h1>こんにちは。</h1>
+      <p class="intro">ChatGPTとGitHubを使って作った、最初のWebサイトです。</p>
+    </header>
+
+    <section class="favorites" aria-labelledby="favorites-title">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <h2 id="favorites-title">好きなこと</h2>
+      </div>
+      <ul>
+        <li>写真を撮ること</li>
+        <li>新しいものを作ること</li>
+        <li>家族と出かけること</li>
+      </ul>
+    </section>
+
+    <section class="more" aria-labelledby="more-title">
+      <h2 id="more-title" class="sr-only">このサイトについて</h2>
+      <button id="moreButton" type="button" aria-expanded="false" aria-controls="message">もっと見る</button>
+      <p id="message" hidden>少しずつ、自分らしいサイトに育てていきます。</p>
+    </section>
   </main>
   <script src="script.js"></script>
 </body>
