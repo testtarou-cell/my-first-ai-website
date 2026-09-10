@@ -3,36 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ChatGPTとGitHubを使って作った、最初のWebサイトです。">
-  <title>My First AI Website</title>
+  <meta name="description" content="『はじめてのChatGPT × Codex × GitHub Pages』を紹介するページです。">
+  <title>はじめてのChatGPT × Codex × GitHub Pages | 本の紹介</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <header class="hero">
-      <p class="eyebrow">MY FIRST WEBSITE</p>
-      <h1>こんにちは。</h1>
-      <p class="intro">ChatGPTとGitHubを使って作った、最初のWebサイトです。</p>
-    </header>
-
-    <section class="favorites" aria-labelledby="favorites-title">
-      <div class="section-heading">
-        <p class="section-number">01</p>
-        <h2 id="favorites-title">好きなこと</h2>
+  <main>
+    <section class="hero" aria-labelledby="book-title">
+      <div class="content hero-content">
+        <p class="eyebrow">BEGINNER'S GUIDE</p>
+        <p class="hero-label">ChatGPT × Codex × GitHub Pages</p>
+        <h1 id="book-title">はじめての<span class="title-break"><br></span>ChatGPT × Codex ×<span class="title-break"><br></span>GitHub Pages</h1>
+        <p class="lead">プログラミングがはじめてでも大丈夫。日本語で相談しながら、自分のWebサイトを作って公開するまでを、ひとつずつ進めるための本です。</p>
+        <a class="button" href="#learning">学べることを見る<span aria-hidden="true"> ↓</span></a>
       </div>
-      <ul>
-        <li>写真を撮ること</li>
-        <li>新しいものを作ること</li>
-        <li>家族と出かけること</li>
-      </ul>
     </section>
 
-    <section class="more" aria-labelledby="more-title">
-      <h2 id="more-title" class="sr-only">このサイトについて</h2>
-      <button id="moreButton" type="button" aria-expanded="false" aria-controls="message">もっと見る</button>
-      <p id="message" hidden>少しずつ、自分らしいサイトに育てていきます。</p>
+    <section class="section audience" aria-labelledby="audience-title">
+      <div class="content two-column">
+        <div>
+          <p class="section-kicker">FOR YOU</p>
+          <h2 id="audience-title">この本が<br>向いている人</h2>
+        </div>
+        <div class="section-copy">
+          <p>仕事には慣れているけれど、プログラミングやGitHubは初めての人に向けた入門書です。</p>
+          <p>難しい言葉を覚えることよりも、AIに日本語で頼み、画面を見ながら少しずつ形にしていくことを大切にします。</p>
+        </div>
+      </div>
     </section>
+
+    <section id="learning" class="section learning" aria-labelledby="learning-title">
+      <div class="content">
+        <p class="section-kicker">WHAT YOU WILL LEARN</p>
+        <h2 id="learning-title">学べること</h2>
+        <p class="section-intro">「何をどう頼めばよいか」を知り、自分でWebサイトを育てていく最初の一歩を学びます。</p>
+        <div class="cards">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>AIに日本語で頼む方法</h3>
+            <p>作りたいサイトや直したい内容を、わかりやすく伝えるコツを身につけます。</p>
+          </article>
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>画面を見ながら編集する方法</h3>
+            <p>文章や見た目を変更し、プレビューで確認する流れを体験します。</p>
+          </article>
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>GitHubで変更を管理する方法</h3>
+            <p>変更内容を確認して取り込み、安心して次の作業へ進む方法を学びます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" aria-labelledby="journey-title">
+      <div class="content">
+        <p class="section-kicker">LEARNING JOURNEY</p>
+        <h2 id="journey-title">学習の流れ</h2>
+        <ol class="steps">
+          <li>
+            <p class="level">レベル 0</p>
+            <h3>まずは準備をする</h3>
+            <p>ChatGPTとGitHubを準備し、Codexとつなぎます。</p>
+          </li>
+          <li>
+            <p class="level">レベル 1</p>
+            <h3>日本語でサイトを作る</h3>
+            <p>作りたい内容を日本語で伝え、最初のWebサイトを作成します。</p>
+          </li>
+          <li>
+            <p class="level">レベル 2</p>
+            <h3>日本語で編集して確認する</h3>
+            <p>文章やデザインを日本語で編集し、プレビューで変化を確かめます。</p>
+          </li>
+          <li>
+            <p class="level">レベル 3</p>
+            <h3>変更を取り込み、公開する</h3>
+            <p>変更内容を確認して取り込み、GitHub Pagesでサイトを公開します。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content">
+        <p>小さな一歩から、自分のWebサイトづくりをはじめよう。</p>
+      </div>
+    </footer>
   </main>
-  <script src="script.js"></script>
 </body>
 </html>
