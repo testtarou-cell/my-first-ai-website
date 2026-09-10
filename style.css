@@ -9,7 +9,7 @@
 
 body { min-width: 320px; margin: 0; background: #f5f9fd; }
 
-.content { width: min(100% - 48px, 1080px); margin: 0 auto; }
+.content { width: min(calc(100% - 48px), 1080px); margin: 0 auto; }
 
 .hero {
   position: relative;
@@ -33,7 +33,7 @@ body { min-width: 320px; margin: 0; background: #f5f9fd; }
 .hero-content { position: relative; z-index: 1; max-width: 830px; }
 .eyebrow, .section-kicker, .level, .card-number { margin: 0; color: #2672aa; font-size: .78rem; font-weight: 800; letter-spacing: .14em; }
 .hero-label { margin: 26px 0 0; color: #52718a; font-size: clamp(.92rem, 2vw, 1.08rem); font-weight: 700; }
-h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3, p { margin-top: 0; overflow-wrap: anywhere; }
 
 h1 {
   margin: 14px 0 28px;
@@ -74,7 +74,7 @@ h3 { margin-bottom: 13px; color: #1d5079; font-size: clamp(1.17rem, 2.2vw, 1.42r
 .footer p { margin: 0; font-size: .95rem; line-height: 1.6; }
 
 @media (max-width: 760px) {
-  .content { width: min(100% - 36px, 1080px); }
+  .content { width: min(calc(100% - 36px), 1080px); }
   .two-column, .cards, .steps { grid-template-columns: 1fr; }
   .two-column { gap: 24px; }
   .cards { gap: 14px; }
@@ -85,6 +85,14 @@ h3 { margin-bottom: 13px; color: #1d5079; font-size: clamp(1.17rem, 2.2vw, 1.42r
   .steps li:first-child { padding-top: 0; border-top: 0; }
   .steps li:last-child { padding-bottom: 0; }
   .level { margin-bottom: 12px; }
+}
+
+@media (max-width: 400px) {
+  .content { width: calc(100% - 32px); }
+  h1 { font-size: clamp(2rem, 10vw, 2.35rem); letter-spacing: -.045em; }
+  .title-break { display: none; }
+  h2 { font-size: 1.9rem; }
+  .hero-label, .lead, .section-copy, .section-intro { overflow-wrap: anywhere; }
 }
 
 @media (prefers-reduced-motion: reduce) {
